@@ -1,6 +1,7 @@
 //consultants.js
 module.exports = [
   {
+    id: 1,
     name: "Jos Verstappen",
     price: 999.99,
     image:
@@ -8,6 +9,7 @@ module.exports = [
     description: "The man, the myth, the legend",
   },
   {
+    id: 2,
     name: "Ive Verstappen",
     price: 799.99,
     image:
@@ -15,6 +17,7 @@ module.exports = [
     description: "Not related to Max Verstappen, but can pingpong",
   },
   {
+    id: 3,
     name: "Bjorn Ruysen",
     price: 649.99,
     image:
@@ -22,6 +25,7 @@ module.exports = [
     description: "The Bear Grylls from Heultje",
   },
   {
+    id: 4,
     name: "Daan Geudens",
     price: 549.99,
     image:
@@ -29,6 +33,7 @@ module.exports = [
     description: "Works hard when he's not on his bike. Or running. Or swimming.",
   },
   {
+    id: 5,
     name: "Tom Peeters",
     price: 499.99,
     image:
@@ -36,6 +41,7 @@ module.exports = [
     description: "I'm sure I have already met this person somewhere",
   },
   {
+    id: 6,
     name: "Stef Van Dingenen",
     price: 9.99,
     image:
@@ -43,6 +49,7 @@ module.exports = [
     description: "Doing his best. Good personality",
   },
   {
+    id: 7,
     name: "Jarne Peeters",
     price: -9.99,
     image:
