@@ -1,0 +1,35 @@
+header {
+  background-color: white;
+  color: whitesmoke;
+  padding: 5px 5%;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+
+  .logo {
+    height: 60px;
+  }
+
+  .cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    img {
+      width: 30px;
+    }
+
+    .badge {
+      color: white;
+      background-color: #35badb;
+      height: 17px;
+      width: 17px;
+      font-size: 11px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      right: -10px;
+      border-radius: 50%;
+    }
+  }
+}

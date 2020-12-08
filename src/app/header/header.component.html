@@ -1,0 +1,15 @@
+<header class="d-flex align-items-center m-0">
+  <div class="d-flex align-items-center flex-grow-1">
+    <img
+      class="logo"
+      src="/assets/images/dotnetlab-logo.png"
+      alt="dotNET lab"
+    />
+  </div>
+  <nav>
+    <div class="cart">
+      <img src="/assets/images/cart.png" alt="cart" />
+      <span class="badge" *ngIf="cart.length > 0">{{ cart.length }}</span>
+    </div>
+  </nav>
+</header>
