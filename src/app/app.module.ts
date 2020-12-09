@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducers } from './store/app.reducers';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    StoreModule.forRoot(appReducers),
   ],
   providers: [],
   bootstrap: [AppComponent]

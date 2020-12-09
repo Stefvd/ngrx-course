@@ -1,22 +1,22 @@
-export enum ConsultantsActionTypes {
+export enum ConsultantsActions {
   UpdateConsultants = '[Consultants] Update consultants',
   Add = '[Consultants] Add consultant to cart',
   Remove = '[Consultants] Remove consultant from cart',
 }
 
 export const UpdateConsultants = (payload) => ({
-  type: ConsultantsActionTypes.UpdateConsultants,
+  type: ConsultantsActions.UpdateConsultants,
   payload,
 });
 
 export const AddToCart = (payload) => {
   return {
-    type: ConsultantsActionTypes.Add,
+    type: ConsultantsActions.Add,
     payload,
   };
 };
 
 export const RemoveFromCart = (payload) => ({
-  type: ConsultantsActionTypes.Remove,
+  type: ConsultantsActions.Remove,
   payload,
 });
