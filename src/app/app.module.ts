@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { StoreModule } from '@ngrx/store';
 import { appReducers } from './store/app.reducers';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { appReducers } from './store/app.reducers';
     AppRoutingModule,
     NgbModule,
     StoreModule.forRoot(appReducers),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
