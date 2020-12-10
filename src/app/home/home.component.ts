@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsultantService } from '../services/consultant.service';
 
 @Component({
   selector: 'app-home',
@@ -29,7 +30,11 @@ export class HomeComponent implements OnInit {
     },
   ];
 
-  constructor() {}
+  constructor(
+    private consultantService: ConsultantService,
+  ) {}
 
-  ngOnInit(): void {}
+  public ngOnInit(): void {
+    this.consultantService.updateConsultants();
+  }
 }

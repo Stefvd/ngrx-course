@@ -1,0 +1,28 @@
+<div class="consultant">
+  <div class="consultant-image-holder">
+    <img class="consultant-image" [src]="consultant.image" [alt]="consultant.name" />
+  </div>
+  <div class="consultant-details">
+    <p class="consultant-details__name">{{ consultant.name }}</p>
+    <p class="consultant-details__price">€{{ consultant.price }}</p>
+  </div>
+  <div class="consultant-description">
+    <p>{{ consultant.description }}</p>
+  </div>
+  <div class="consultant-actions">
+    <button
+      class="consultant-actions__add"
+      (click)="addToCart(consultant)"
+      *ngIf="!inCart"
+    >
+      <img src="/assets/images/add-to-cart.png" alt="add to cart" />
+    </button>
+    <button
+      class="consultant-actions__remove"
+      (click)="removeFromCart(consultant)"
+      *ngIf="inCart"
+    >
+      <img src="/assets/images/remove-from-cart.png" alt="remove from cart" />
+    </button>
+  </div>
+</div>
