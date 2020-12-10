@@ -6,17 +6,26 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { StoreModule } from '@ngrx/store';
+import { appReducers } from './store/app.reducers';
+import { HttpClientModule } from '@angular/common/http';
+import { ConsultantListComponent } from './consultant-list/consultant-list.component';
+import { ConsultantComponent } from './consultant-list/consultant/consultant.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
+    ConsultantListComponent,
+    ConsultantComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    StoreModule.forRoot(appReducers),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

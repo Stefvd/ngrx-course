@@ -1,0 +1,6 @@
+<div class="d-flex flex-wrap consultant-list">
+  <app-consultant
+    *ngFor="let consultant of consultants$ | async"
+    [consultant]="consultant"
+  ></app-consultant>
+</div>
