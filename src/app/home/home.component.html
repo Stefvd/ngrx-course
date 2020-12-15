@@ -1,6 +1,6 @@
 <main>
   <section class="d-flex">
-    <div class="banners" *ngFor="let banner of banners">
+    <div class="banners" *ngFor="let banner of banners$ | async">
       <img [src]="banner.src" [alt]="banner.alt" />
     </div>
   </section>

@@ -5,3 +5,8 @@ export interface Consultant {
   image: string;
   description: string;
 }
+
+export interface Banner {
+  src: string;
+  alt: string;
+}
